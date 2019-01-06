@@ -15,6 +15,7 @@ Stop playing
 * enable trigger for new submissions
 
 ## Changelog
-v0.1.2 (20-11-2017) Version bumb
+v0.1.5 (06-01-2019) Had to ditch tumbler because of their popover-disclaimer  
+v0.1.2 (20-11-2017) Version bumb  
 v0.1.1 (18-11-2017) tumblr version  http://ancilliatiliacurves.tumblr.com/rss  
 v0.1.0 (18-11-2017) first version  

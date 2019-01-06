@@ -53,10 +53,10 @@ class Ancilla extends Homey.App {
 				return tokenval.setValue( "https://i.pinimg.com/236x/5b/3d/7b/5b3d7be42d2c8917e17e8a03eaf1a4ff--ancilla-tilia.jpg" );
 				})
 		
-		//const rssurl = "https://www.pinterest.co.uk/stof3/ancilla-tilia.rss/";
+		const rssurl = "https://www.pinterest.co.uk/stof3/ancilla-tilia.rss/";
 		//const rssurl = "https://backend.deviantart.com/rss.xml?q=gallery%3AAncillaTilia%2F7290048&type=deviation";
 		//const rssurl = "https://nl.pinterest.com/elturix80/ancilla-tilia.rss/";
-		const rssurl = "http://ancilliatiliacurves.tumblr.com/rss";
+		//const rssurl = "http://ancilliatiliacurves.tumblr.com/rss";
 		readfeeds(rssurl).then(function(results) {
 			urllist=results;
 			total = urllist[0].tracks.length;
@@ -111,7 +111,7 @@ async function readfeeds(rssurl) {
 	
 function readfeed(url) {
 	return new Promise(resolve => {
-			http.get(url, function(res) {
+			https.get(url, function(res) {
 				var parser = new FeedMe(true);
 				var teller=0;
 				
